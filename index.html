@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 <html lang=en>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>Cameron Pittman: Portfolio</title>
+<link href=css/print.css media=print rel=stylesheet>
+
+<header>
+    <img src=img/photo_99x99.jpg alt="">
+    <p>Шавырова Юлия Викторовна
+        <br><span>yulia.shavyrova@gmail.com</span>
+        <br><span>+37529 104 22 73</span></p><a href=/><img src=img/profilepic.jpg></a>
+    <p>Cameron Pittman
+        <br><span>Course Developer</span></header>
+<div class=container>
+    
+    <div class=hero><strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :)
+        <br>Contact me: me@email.com</div>
+    <div class=content>
+        <ul>
+            <li><img src=img/2048.jpg> <a href=project-2048.html>Build Your Own 2048!</a>
+                <p>I made my own version of 2048. How cool is that!?
+                    <li><img src=img/webperf.jpg> <a href=project-webperf.html>Website Performance Optimization</a>
+                        <p>Hey... this class looks familiar.
+                            <li><img src=img/webdev.jpg> <a href=project-mobile.html>Mobile Web Development</a>
+                                <p>Making mobile apps isn't so hard after all.
+                                    <li><img src=views/images/pizzeria.jpg style=width:100px> <a href=views/pizza.html>Cam's Pizzeria</a>
+                                        <p>Who wants a performant pizza?</ul>
+    </div>
+    <footer>
+        <p>© Web Performance 2014 <span id=crp-stats></span></footer>
+</div>
 <style>
     html {
         overflow-y: scroll;
@@ -7,12 +37,6 @@
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: none
     }
-</style>
-<meta charset=utf-8>
-<meta content="width=device-width,initial-scale=1" name=viewport>
-<title>Cameron Pittman: Portfolio</title>
-<link href=css/print.css media=print rel=stylesheet>
-<style>
     body {
         margin: 0;
         font-size: 14px;
@@ -57,48 +81,23 @@
         font-size: .8em;
         font-weight: 400
     }
-    
-    @media only screen and (max-width:480px) {
-        body {
-            font-size: 12px
-        }
-        header p {
-            padding-left: 4.5em
-        }
+    b,
+    strong {
+        font-weight: 700
     }
-</style>
-<header>
-    <style>
-        img {
-            border: 0;
-            max-width: 100%
-        }
-    </style><img src=img/photo_99x99.jpg alt="">
-    <p>Шавырова Юлия Викторовна
-        <br><span>yulia.shavyrova@gmail.com</span>
-        <br><span>+37529 104 22 73</span></p><a href=/><img src=img/profilepic.jpg></a>
-    <p>Cameron Pittman
-        <br><span>Course Developer</span></header>
-<div class=container>
-    
-    <div class=hero><strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :)
-        <br>Contact me: me@email.com</div>
-  <style>
-        b,
-        strong {
-            font-weight: 700
-        }
         
-        .hero {
+    .hero {
             padding: 2em;
             background-color: #f8f8f8;
             font-size: 1.2em;
             border-bottom: 1px solid #ccc;
             border-top: 1px solid #ccc
+    }
+    img {
+            border: 0;
+            max-width: 100%
         }
-    </style>
-    <style>
-        a {
+    a {
             color: #12c
         }
         
@@ -140,20 +139,7 @@
             margin: 1em 0;
             padding: 0 0 0 20px
         }
-    </style>
-    <div class=content>
-        <ul>
-            <li><img src=img/2048.jpg> <a href=project-2048.html>Build Your Own 2048!</a>
-                <p>I made my own version of 2048. How cool is that!?
-                    <li><img src=img/webperf.jpg> <a href=project-webperf.html>Website Performance Optimization</a>
-                        <p>Hey... this class looks familiar.
-                            <li><img src=img/webdev.jpg> <a href=project-mobile.html>Mobile Web Development</a>
-                                <p>Making mobile apps isn't so hard after all.
-                                    <li><img src=views/images/pizzeria.jpg style=width:100px> <a href=views/pizza.html>Cam's Pizzeria</a>
-                                        <p>Who wants a performant pizza?</ul>
-    </div>
-    <style>
-        footer {
+    footer {
             padding: 0 .5em;
             border-top: 1px solid #ccc
         }
@@ -162,10 +148,17 @@
             float: right;
             font-style: italic
         }
-    </style>
-    <footer>
-        <p>© Web Performance 2014 <span id=crp-stats></span></footer>
-</div>
+    
+    
+    @media only screen and (max-width:480px) {
+        body {
+            font-size: 12px
+        }
+        header p {
+            padding-left: 4.5em
+        }
+    }
+</style>
 <script async src=https://www.google-analytics.com/analytics.js></script>
 <script async src=js/perfmatters.js></script>
 <script>
